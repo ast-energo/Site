@@ -1,0 +1,204 @@
+/* ================================
+Base Element Styles
+=================================== */
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap");
+
+* {
+  box-sizing: border-box;
+  /* border: dashed blue 1px; */
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.5;
+  color: #3a3a3a;
+  background-color: papayawhip;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  max-width: 90%;
+  margin: auto;
+  flex: 1;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  margin: auto;
+}
+
+header {
+  background-color: indianred;
+  margin-bottom: 1em;
+}
+
+footer {
+  background-color: indianred;
+}
+
+h1,
+h2,
+h3 {
+  margin-top: 0;
+  text-align: center;
+}
+
+/* a[target="_blank"]::after {
+  position: relative;
+  right: -10px;
+  bottom: -2px;
+  content: url(../img/external-link.svg);
+  display: inline-block;
+  width: 1em;
+} */
+
+/* ================================
+Base Layout Styles
+=================================== */
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.name {
+  margin: 0;
+  font-size: 3em;
+  font-family: sans-serif;
+  color: white;
+  text-align: center;
+  text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9,
+    0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1),
+    0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2),
+    0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2),
+    0 20px 20px rgba(0, 0, 0, 0.15);
+}
+
+.main-header a,
+.main-nav a,
+.main-footer a {
+  color: white;
+}
+
+.main-nav a:hover {
+  background-color: goldenrod;
+}
+
+.main-header {
+  width: 90%;
+  margin: auto;
+}
+
+.main-nav {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.main-nav a {
+  display: block;
+  text-align: center;
+  border-top: solid white 1px;
+}
+
+.main-footer {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-copy {
+  height: 1.5em;
+  margin: auto 0;
+  display: none;
+}
+
+.footer-cont {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.map {
+  max-width: 100%;
+}
+#tk ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 0;
+}
+/* ================================
+Media Queries
+=================================== */
+
+@media (min-width: 769px) {
+  table {
+    min-width: 475px;
+
+    
+  }
+  .main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  .main-nav {
+    display: flex;
+  }
+  .main-nav a {
+    border: none;
+    padding: 0.5em;
+  }
+  .main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1em;
+  }
+  #ast,
+  #tk {
+    grid-column: 1 / 3;
+  }
+  #ast {
+    text-align: justify;
+  }
+  .main-footer {
+    justify-content: space-between;
+  }
+  .footer-copy {
+    display: block;
+  }
+  .footer-cont {
+    text-align: right;
+  }
+  .contact {
+    display: flex;
+  }
+  .contact ul {
+    padding: 5px;
+  }
+}
+
+@media (min-width: 769px) {
+  main {
+    width: 769px;
+  }
+
+  .main-header,
+  .main-footer {
+    max-width: 769px;
+  }
+}

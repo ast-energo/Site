@@ -53,7 +53,9 @@ h3 {
   margin-top: 0;
   text-align: center;
 }
-
+iframe {
+  max-width: 100%;
+}
 /* a[target="_blank"]::after {
   position: relative;
   right: -10px;

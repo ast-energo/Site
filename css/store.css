@@ -1,35 +1,35 @@
-  main {
-    max-width: 100%;
-  }
+main {
+  max-width: 100%;
+}
 
 table {
-    margin: auto;
-    border-spacing: 0;
-    border-collapse: collapse;
-  }
-  
-  td:first-child {
-    padding-left: 10px;
-  }
-  td:last-child {
-    text-align: center;
-    min-width: 60px;
-  }
-  
-  thead th {
-    font-weight: 400;
-    background: #8a97a0;
-    color: #fff;
-  }
-  tr {
-    background: #f4f7f8;
-    border-bottom: 1px solid #fff;
-    margin-bottom: 5px;
-  }
-  tr:nth-child(even) {
-    background: #e8eeef;
-  }
-  tfoot tr {
-    background: none;
-    font-style: italic;
-  }
+  margin: auto;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+td:first-child {
+  padding-left: 10px;
+}
+td:last-child {
+  text-align: center;
+  min-width: 60px;
+}
+
+thead th {
+  font-weight: 400;
+  background: #8a97a0;
+  color: #fff;
+}
+tr {
+  background: #f4f7f8;
+  border-bottom: 1px solid #fff;
+  margin-bottom: 5px;
+}
+tr:nth-child(even) {
+  background: #e8eeef;
+}
+tfoot tr {
+  background: none;
+  font-style: italic;
+}

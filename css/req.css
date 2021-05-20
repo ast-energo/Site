@@ -1,24 +1,24 @@
 table {
-    margin: auto;
-    border-spacing: 0;
-    border-collapse: collapse;
-  }
-  
-  td {
-    padding: 0 10px;
-  }
-  
-  tr {
-    background: #f4f7f8;
-    border-bottom: 1px solid #fff;
-    margin-bottom: 5px;
-  }
-  
-  tr:nth-child(even) {
-    background: #e8eeef;
-  }
+  margin: auto;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
 
-  tfoot tr {
-    background: none;
-    font-style: italic;
-  }
+td {
+  padding: 0 10px;
+}
+
+tr {
+  background: #f4f7f8;
+  border-bottom: 1px solid #fff;
+  margin-bottom: 5px;
+}
+
+tr:nth-child(even) {
+  background: #e8eeef;
+}
+
+tfoot tr {
+  background: none;
+  font-style: italic;
+}

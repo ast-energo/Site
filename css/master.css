@@ -150,8 +150,6 @@ Media Queries
 @media (min-width: 769px) {
   table {
     min-width: 475px;
-
-    
   }
   .main-header {
     display: flex;
